@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Sumador</title>
+  </head>
+
+  <body>
+    <div class="flex justify-center items-center h-full bg-blue-100">
+      <div class="w-1/6 bg-white shadow-md rounded px-6 py-6">
+        <div class="mb-4 font-bold text-xl text-gray-700">
+          <h1>Sumador</h1>
+        </div>
+
+        <div
+          class="border rounded my-4 py-4 text-center text-gray-700 font-bold"
+        >
+          Resultado: <span id="result">0</span>
+        </div>
+
+        <form>
+          <div class="my-2">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="sumando1"
+            >
+              Primer sumando
+            </label>
+            <input
+              class="shadow border rounded w-full py-2 px-3 text-gray-700"
+              id="sumando1"
+              name="sumando1"
+              type="number"
+              value="0"
+            />
+          </div>
+
+          <div class="my-2">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="sumando2"
+            >
+              Segundo sumando
+            </label>
+            <input
+              class="shadow border rounded w-full py-2 px-3 text-gray-700"
+              id="sumando2"
+              name="sumando2"
+              type="number"
+              value="0"
+            />
+          </div>
+
+          <button
+            id="submit-button"
+            class="shadow w-full bg-blue-500 hover:bg-blue-400 text-white font-bold my-2 py-2 rounded"
+            type="button"
+          >
+            Calcular
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
